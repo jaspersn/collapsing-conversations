@@ -1,0 +1,59 @@
+:root {
+    --video-controls-height: 0px;
+    --activity-controls-height: 0px;
+    --video-controls-opacity: 0;
+    --video-controls-padding: 0px;
+    --user-icon-width: 24px;
+    --user-icon-overflow: hidden;
+    --user-icon-padding: 16px;
+}
+
+#app-mount div.sidebar_c48ade.hidden_a4d4d9 {
+    width: 0px !important
+}
+
+#app-mount div.sidebar_c48ade {
+    --conversations-pointer-events: none;
+    --video-controls-height: 0px;
+    --activity-controls-height: 0px;
+    --video-controls-opacity: 0;
+    --video-controls-padding: 0px;
+    --user-icon-width: 24px;
+    --user-icon-overflow: hidden;
+    --user-icon-padding: 16px;
+    width: 64px !important;
+    transition: width .2s;
+}
+
+#app-mount div.sidebar_c48ade:hover {
+    --video-controls-height: 100px;
+    --activity-controls-height: 24px;
+    --video-controls-opacity: 1;
+    --video-controls-padding: 8px;
+    --user-icon-overflow: visible;
+    --user-icon-width: 100%;
+    --user-icon-padding: 8px;
+    width: 240px !important;
+    transition-delay: 0.25s
+}
+
+.panel_bd8c76,
+.wrapper_e131a9:has(.container_e131a9) {
+    height: var(--video-controls-height);
+    opacity: var(--video-controls-opacity);
+    transition: height 0.2s, opacity 0.2s, padding 0.2s;
+    transition-delay: 0.25s;
+}
+
+.panel_bd8c76 {
+    padding: var(--video-controls-padding);
+    height: var(--activity-controls-height);
+}
+
+.container__37e49 {
+    overflow: var(--user-icon-overflow);
+    width: var(--user-icon-width);
+    padding-left: var(--user-icon-padding);
+    transition: width 0.2s, padding-left 0.2s;
+    transition-delay: 0.25s;
+}
